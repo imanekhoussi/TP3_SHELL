@@ -1,0 +1,1 @@
+netstat -a |awk '($NF =="LISTEN") {print $4}' | awk -F ':' '{print $2}'
